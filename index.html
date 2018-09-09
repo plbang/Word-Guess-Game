@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-4">Hangman Game</h1>
+          <p class="lead">Random word will be generated. It is your job to guess the letters by typing in letters from A-Z. You have 9 total guesses before you lose.</p>
+        </div>
+      </div>
+
+      <div class="second container">
+            <div class="row justify-content-md-center">
+               <div class="col-lg-8">       
+                        <div class="row">
+                                <h1>Word to Guess</h1>
+                        </div>
+                        <div class="row">
+                                <h2 id="blankSpaces">_ _ _ _ _ _ _</h2>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>Wrong Guesses:</h2>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 id="wrongGuesses"></h2>
+                            </div>
+                        </div>
+
+                        
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>Guesses Left: </h2>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 id="guessesLeft"></h2>
+                            </div>
+                        </div>
+
+                        
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>Win Counter: </h2>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 id="winCounter"></h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>Loss Counter: </h2>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 id="lossCounter"></h2>
+                            </div>
+                        </div>
+
+                
+
+                </div> 
+            </div>
+        </div>
+
+
+</div> 
+
+
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
